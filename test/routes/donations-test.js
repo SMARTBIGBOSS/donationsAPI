@@ -46,7 +46,7 @@ describe('Donationss', function (){
                     expect(result).to.include( { id: 1000001, amount: 1100  } );
                     done();
                 });
-        });
+        }).timeout(5000);
     });
 /*
     describe('POST /donations', function () {
